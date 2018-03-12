@@ -36,16 +36,42 @@ Personal Portfolio Website
     }
     </style>
 </head>
-<body>
+<body offset="0" data-target="#navbar-main">
 	<!-- add a navbar -->
-
-	coming soon...
-
+	    <!-- Start Page -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <div id="navbar-main">
+        <!-- Fixed navbar -->
+        <div id="navCont" class="navbar navbar-inverse navbar-fixed-top fade">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    </button>
+                    <a class="navbar-brand" href="#home"><span><img id="brandimage" src="assets/img/brandpurple.png" height=30px></span></a>
+                </div>
+                <div id="boldsharp" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li> <a href="#portfolio" class="smoothScroll toplinks" style="font-weight: 500;">Portfolio</a></li>
+                        <li> <a href="#awards" class="smoothScroll toplinks" style="font-weight: 500;">Process</a></li>
+                        <li> <a href="#articles" class="smoothScroll toplinks" style="font-weight: 500;">Articles</a></li>
+                        <li> <a href="#awards" class="smoothScroll toplinks" style="font-weight: 500;">Awards</a></li>
+                        <li> <a href="#about" class="smoothScroll toplinks" style="font-weight: 500;">About</a></li>
+                        <li> <a href="#contact" class="smoothScroll toplinks" style="font-weight: 500;">Contact</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
 	<!-- headerwrap -->
     <div class="container-fluid">
             <div class="headerwrap flex" name="home" id="home">
                 <div class="flex-item-txtblock" data-sr='wait 1s enter right over 2.5s'>
                     <p class="headerName"><b>Andrew Garner</b></p>
+					<!-- qt this piece is formatted by custom.css -->
                     <p class="headerlead center-block"><span>Data Scientist</span><span>&nbsp; • &nbsp;</span><span> Everything Data </span></p>
                     <div class="center-block dividerLine"></div>
                     <p class="headerlead center-block">I'm passionate about practical solutions to nuanced business problems. Strong believer in data-driven decision making and creating sustainable pipelines to deliver value from data.</p>

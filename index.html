@@ -158,11 +158,11 @@
 			    	<div class="portfolio-image-holder"><img src="images/work/xgboost.jpg" alt="1" class="img-responsive portfolio-image"></div>
 			    	<span class="portfolio-badge badge">xgboost</span>
 			    	<span class="portfolio-hover">
-						<span>
+						<span id="inline-popups">
 							<a href="https://github.com/garnerat" target="_blank">
 								<span class="portfolio-links"><span class="ion-social-github portfolio-links-icons"></span></span>
 							</a>
-							<a href="images/work/xgboost.jpg" class="zoom" title="xgboost">
+							<a href="#test-popup" class="zoom" title="xgboost">
 								<span class="portfolio-links"><span id="inline-popups" class="ion-arrow-expand portfolio-links-icons"></span></span>
 							</a>
 							<span class="project-title no-margin-bottom mt10">Classifying Y</span>
@@ -307,6 +307,8 @@
 			    </div><!-- /.column -->
 			</div><!-- /.row -->
 		</div><!-- /.container -->
+	<!-- Popup itself -->
+		<div id="test-popup" class=" mfp-with-anim mfp-hide">You may put any HTML here. This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</div>
 	</section><!-- /.section -->
 	<!-- Begin Work -->
 
@@ -348,7 +350,7 @@
 		});
 		// Inline popups
 		$('#inline-popups').magnificPopup({
-		delegate: 'span',
+		delegate: 'a',
 		removalDelay: 500, //delay removal by X to allow out-animation
 		callbacks: {
 		beforeOpen: function() {

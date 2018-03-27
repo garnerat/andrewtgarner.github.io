@@ -162,7 +162,7 @@
 							<a href="https://github.com/garnerat" target="_blank">
 								<span class="portfolio-links"><span class="ion-social-github portfolio-links-icons"></span></span>
 							</a>
-							<a href="#test-popup" data-effect="mfp-zoom-in" title="xgboost">
+							<a title="xgboost">
 								<span class="portfolio-links"><span class="ion-arrow-expand portfolio-links-icons"></span></span>
 							</a>
 							<span class="project-title no-margin-bottom mt10">Classifying Y</span>
@@ -350,14 +350,11 @@
 		});
 		// Inline popups
 		$('.ion-arrow-expand').magnificPopup({
-		delegate: 'a',
-		removalDelay: 500, //delay removal by X to allow out-animation
-		callbacks: {
-		beforeOpen: function() {
-		   this.st.mainClass = this.st.el.attr('data-effect');
-		}
-		},
-		midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+		  items: {
+			  src: '<div class="white-popup">Dynamically created popup</div>',
+			  type: 'inline'
+		  },
+		  closeBtnInside: true
 		});
 	</script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>

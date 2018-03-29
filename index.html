@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<-- Built off of particles personal agency bootstrap template -->
 	<meta charset="utf-8"/>
-	<meta name="author" content="Denis Samardjiev" />
+	<meta name="author" content="Andrew Garner" />
 	<meta name="description" content="Personal Website + Portfolio - Andrew T Garner">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Personal Website + Portfolio - Andrew T Garner</title>
@@ -64,7 +65,6 @@
 							<li><a href="#services" data-id="services" class="scroll-link">Services</a></li>
 							<li><a href="#about" data-id="about" class="scroll-link">About</a></li>
 							<li><a href="#work" data-id="work" class="scroll-link">Work</a></li>
-							<li><a href="#team" data-id="team" class="scroll-link">Team</a></li>
 							<li><a href="#contact" data-id="contact" class="scroll-link">Contact</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-down"></span></a>
@@ -73,7 +73,7 @@
 									<li><a href="pricing-options.html">Pricing Options</a></li>
 									<li><a href="team-options.html">Team Options</a></li>
 									<li><a href="../index.html">Demos</a></li>
-									<li><a href="https://wrapbootstrap.com/theme/particles-personal-agency-template-WB05N7852" target="_blank">Purchase</a></li>
+
 								</ul>
 							</li>
 						</ul>
@@ -163,7 +163,9 @@
 								<span class="portfolio-links"><span class="ion-social-github portfolio-links-icons"></span></span>
 							</a>
 							
-							<span class="portfolio-links"><span class="ion-arrow-expand portfolio-links-icons"></span></span>
+							<span class="portfolio-links">
+							<div class="ion-arrow-expand portfolio-links-icons"></div>
+							</span>
 							
 							<span class="project-title no-margin-bottom mt10">Classifying Y</span>
 						</span>
@@ -351,7 +353,7 @@
 		// Inline popups
 		$('.ion-arrow-expand').magnificPopup({
 		  items: {
-			  src: '<div class="white-popup">Dynamically created popup</div>',
+			  src: '<div>Dynamically created popup</div>',
 			  type: 'inline'
 		  },
 		  closeBtnInside: true

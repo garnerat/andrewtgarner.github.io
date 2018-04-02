@@ -36,6 +36,7 @@ Author:Denis Samardjiev
 	=Contact + Map
     =Footer
     =Media Queries
+	= Text Modal
 */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:700,400,300,100|Montserrat:400,700);
@@ -2023,3 +2024,14 @@ footer hr {
 	.timeline > li .timeline-image h4 { margin-top:40px; }
 	.timeline > li.timeline-inverted > .timeline-panel { padding:0 30px 20px 20px; }
 }
+
+/* = Text Modal
+-------------------------------------------------------------- */
+#small-dialog {
+   /* background: white; */
+    padding: 20px 30px;
+    text-align: left;
+    max-width: 400px;
+    margin: 40px auto;
+    position: relative;
+	}

@@ -309,8 +309,12 @@
 			    </div><!-- /.column -->
 			</div><!-- /.row -->
 		</div><!-- /.container -->
-	<!-- Popup itself -->
-		<div id="test-popup" class=" mfp-with-anim mfp-hide">You may put any HTML here. This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</div>
+	<!-- Popup test -->
+		<a class="popup-with-move-anim" href="#small-dialog">Open with fade-slide animation</a>
+		<div id="small-dialog" class="mfp-hide">
+		<h1>Dialog example</h1>
+		<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</p>
+		</div>
 	</section><!-- /.section -->
 	<!-- Begin Work -->
 
@@ -350,14 +354,41 @@
 				$('.timer').countTo({speed: 3000});
 			}
 		});
-		// Inline popups
-		$('.ion-arrow-expand').magnificPopup({
-		  items: {
-			  src: '<div>Dynamically created popup</div>',
-			  type: 'inline'
-		  },
-		  closeBtnInside: true
+	</script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('.popup-with-zoom-anim').magnificPopup({
+			type: 'inline',
+
+			fixedContentPos: false,
+			fixedBgPos: true,
+
+			overflowY: 'auto',
+
+			closeBtnInside: true,
+			preloader: false,
+			
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-zoom-in'
 		});
+
+		$('.popup-with-move-anim').magnificPopup({
+			type: 'inline',
+
+			fixedContentPos: false,
+			fixedBgPos: true,
+
+			overflowY: 'auto',
+
+			closeBtnInside: true,
+			preloader: false,
+			
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-slide-bottom'
+		});
+	});
 	</script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/scrollreveal.min.js"></script>

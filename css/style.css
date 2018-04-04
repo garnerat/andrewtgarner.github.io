@@ -2036,6 +2036,6 @@ footer hr {
     position: relative;
 	}
 	
-.mfp-close {
-	color: #40E0D0;
-	}
+.mfp-close-btn-in .mfp-close {
+  color: #40E0D0;
+  }
